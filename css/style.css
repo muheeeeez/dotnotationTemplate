@@ -1,0 +1,293 @@
+*{
+ font-family: 'lato', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+:root{
+    --primary-color: black;
+}
+body{
+    font-family:'lato', sans-serif; 
+    color: #333;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+h1,h2{
+    font-weight:300 ;
+    line-height: 1.2;
+    margin: 10px ;
+
+}
+p{
+    margin: 20px ;
+}
+img{
+    width: 100px;
+}
+.navbar{
+    background-color: var(--primary-color) ;
+    color: #fff;
+    height: 70px;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: auto;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a{
+    color: #fff;
+    padding: 5px;
+    margin: 0 5px;
+    
+}
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form-special{
+    padding: 0;
+    margin: 20 20;
+}
+.showcase{
+    background-color:var(--primary-color) ;
+    height: 400px;
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 40px;
+}
+.showcase p{
+    margin: 20px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+.card{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    justify-self: flex-end;
+    z-index: 100;
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+
+}
+.form-control input[type="email"],
+.form-control input[type="password"]{
+    border:0;
+    border-bottom: 1px solid  rgb(192, 30, 30);
+    width: 100%;
+    padding:3px;
+    font-size: 16px;
+
+}
+.form-control{
+    outline-style: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: green;
+    border: none;
+    border-radius:5px ;
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid blue;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.stats{
+    padding-top: 100px;
+}
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+.text-center{
+    text-align: center;
+}
+.my-1{
+margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 3rem;
+}
+.m-5{
+    margin: 4rem ;
+}
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+    
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+        
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+.p-1{
+    padding:1rem ;
+}
+.p-2{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-4{
+    padding: 3rem;
+}
+.p-5{
+    padding: 4rem ;
+}
+.stats-headings{
+    max-width: 500;
+    margin: auto;
+}
+.stats .grid h3{
+    font-size: 35px;
+}
+.stats .grid p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.md{
+    font-size: 2rem;
+}
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.languages .card:hover{
+    transform: translateY(-15px);
+}
+.bg-dark, .btn-dark{
+    background-color: var(--primary-color);
+    color: white;
+
+}
+.bg-dark a{
+    color: #fff;
+}
+.footer .social a{
+    margin: 0 10px;
+}
+/* mobile devices */
+@media(max-width:500px){
+ .navbar{
+    height: 110px;
+ }
+ .navbar .flex{
+    flex-direction: column;
+ }
+ .navbar ul{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1)
+ }
+
+}
+@media(max-width:768px){
+   .grid, .showcase .grid, .stats .grid{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+   }
+   .showcase{
+       height: auto;
+   }
+   .showcase-text{
+       margin-top: 40px;
+       text-align: center;
+   }
+   .showcase-form{
+       justify-self: center;
+       margin: auto;
+   }
+}
+
+
+ 
